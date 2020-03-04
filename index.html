@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>湖南大学</title>
+		<style type="text/css">
+			*{
+								margin: 0;
+								padding: 0;
+							}
+							body{
+								/* min-width: 1100px; */
+								/* height: 3000px; */
+							}
+							#zz{
+								
+								position:fixed;
+								left: 0px;
+								z-index: 6;
+								/* top: 50%; */
+								top: 87%;
+								bottom: 50%;
+								width: 200px;
+								height: 50px;
+								/* background-color: #c13432; */
+								}
+								#zz a{
+									text-decoration: none;
+									color: white;
+								}
+							.zuozhe{
+								width: 20px;
+								height: 45px;
+								/* background-color: black; */
+							}
+							.zxwz{
+								/* float: left; */
+								width: 20px;
+								height: 45px;
+								background-color: rgba(193, 52, 50,0.8);
+							}
+							.zxnr{
+								width: 80%;
+								height: 45px;
+								position: absolute;
+								top: 0px;
+								left: 20px;
+								/* line-height: 20px; */
+								/* padding-top: 10px; */
+								padding-left: 20px;
+								/* float: right; */
+								/* background-color: aqua; */
+								display: none;
+							}
+							.zuozhe div:hover .zxnr{
+								background-color: rgba(193, 52, 50,0.7);
+								display: block;
+								transition: 1s;
+								
+							}
+								
+							.zuozhe div:hover{
+								background-color:  rgba(193, 52, 50,1);
+								transition: 1s;
+								/* color:#ffd1a3 ; */
+							}
+							.top{
+								width: 100%;
+								height: 100px;
+								background-color: #c13432;
+							}
+							.left{
+								float: left;
+								margin: 20px 160px;
+								}
+							.right{
+								float: right;
+								width: 30%:	
+								height:40px;
+								padding-right: 160px;
+								padding-top:20px ;
+							}
+							.right ul li{
+								list-style: none;
+								float: right;
+								/* text-decoration: none; */
+								padding: 10px;
+								font-size: 13px;
+							}
+							.right a{
+								text-decoration: none;
+								color: white;
+							}
+							.search input {
+								float: left;
+								margin-right: 15px;
+								display:none;
+							}
+							.search :hover input{
+								/* padding-right: 0px; */
+						
+								display: block;
+								}
+							
+							.head{
+								width: 100%;
+								height: 100px;
+								margin-bottom: 10px;
+								margin-top: 10px;
+							}
+						
+							
+							.wrap{
+								position: absolute;
+								z-index: 3;
+								width: 100%;
+							
+								background: rgba(193, 52, 50,0.8);
+							}
+							 .wrap li{
+								list-style: none;
+								color: white;
+							}
+							.wrap a{
+								text-decoration-line: none;  
+								color: white;
+							}
+								
+							 .zuo{
+								padding-left: 130px;
+								float: left;
+								height: 41px;
+								width: 55%;
+							}
+							 .you{
+								padding-right: 150px;
+						/* 		width: 25%; */
+								height: 41px;
+								line-height: 41px;
+								font-size: 12px;
+							}
+								
+								
+								 .zuo .level>li{
+									float: left;
+									width: 12.5%;
+									text-align: center;
+									 /* background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)); */
+									padding: 10px 0 ;
+									font-size: 16px;
+									transition: .4s;
+									}
+								 .you li{
+									/* list-style: none; */
+									float: right;
+									width: 5%;
+									text-align: center;
+									/* padding:  0 10px; */
+								}
+								 .you ul li a:hover{
+									color: darkorange;
+								}
+							
+								 .level>li:hover{
+									background: rgba(155, 53, 59,0.6);}   /* 设置鼠标滑过后的样式 */
+									
+								  .level>li:hover .two{
+								 	display: block;
+								 	}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+								  .two li{
+									 position: relative;
+								 	padding: 5px 0;
+								 	transition: .4s;
+								 	cursor: pointer;}
+								  .two li:hover{
+								 	background: #963f3f;
+								 	}
+								 .two{
+									display: none;
+									margin-top: 10px;
+									}  /* 先使二级菜单的内容隐藏 */
+									
+						
+									
+									.swiper-wrap{
+										/* z-index: 0; */
+									    width: 100%;
+									    position: absolute;
+									 
+									    overflow: hidden;
+									}
+									.swiper-wrap li{
+									    display: inline-block;
+									}
+									.swiper-wrap .swiper-img{
+									    width: 600%;
+									    height: 100%;
+									    /* border: 1px solid darkcyan; */
+									}
+									.swiper-wrap .swiper-img li{
+									    width: calc(100%/6);
+									    height: 550px;
+									}
+									.swiper-wrap .swiper-img li img{
+									    width: 100%;
+									    height: 100%;
+									}
+									
+									/* 切换 */
+									.swiper-img{
+									    animation: swiper linear 18s infinite alternate;
+									}
+									@keyframes swiper{
+									    0% { margin-left: 0%;}
+									    9.1% { margin-left: 0%;}
+										14.1% { margin-left: -100%;}
+									    18.2% { margin-left: -100%;}
+									    27.3% { margin-left: -100%;}
+									    32.3% { margin-left: -200%;}
+									    36.4% { margin-left: -200%;}
+									    45.5% { margin-left: -200%;}
+										49.5% { margin-left: -300%;}
+									    54.6% { margin-left: -300%;}
+									    63.7% { margin-left: -300%;}
+										68.7% { margin-left: -400%;}
+									    72.8% { margin-left: -400%;}
+									    81.9% { margin-left: -400%;}
+									    86.9% { margin-left: -500%;}
+									    91% { margin-left: -500%;}
+									    100% { margin-left: -500%;}
+									
+									}
+									
+									#news{
+											/* clear: both; */
+										width: 90%;
+										height: 535px;
+										/* background-color: lightblue; */
+										margin: auto;
+										margin-top:600px;
+									
+									}
+									.bt{
+										/* clear: both; */
+										height: 50px;;
+									}
+									 .tu{
+										width: 200px;
+										height: 50px;
+										float: left;
+										line-height: 80px;
+										
+										
+									}
+									 .wenzi{
+										float: right;
+										max-height: 50px;
+										width: 45%;
+										margin-top: 20px;
+									}
+									.wenzi a{
+										text-decoration: none;
+										color: gray;
+									}
+									.wenzi a:hover{
+										color: #c13432;
+									}
+									.wenzi li{
+										list-style: none;
+										float: left;
+										padding: 0 30px;
+									}/* 
+											
+									/* 下拉按钮样式 */
+									.dropbtn {
+									    background-color: white;
+										width: 130%;
+										height: 40px;
+									    color: gray;
+									    font-size: 16px;
+									    border: solid lightgray 0.5px ;
+										border-radius: 8px;
+										margin-top: -10px;
+										/* margin-left:150px; */
+									    cursor: pointer;
+									}
+									
+									/* 容器 <div> - 需要定位下拉内容 */
+									.dropdown {
+									    position: relative;
+									    display: inline-block;
+									}
+									
+									/* 下拉内容 (默认隐藏) */
+									.dropdown-content {
+									    display: none;
+									    position: absolute;
+									    background-color: #f9f9f9;
+									    width: 130%;
+									    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+									}
+									
+									/* 下拉菜单的链接 */
+									.dropdown-content a {
+									    /* color: red; */
+									    padding: 7px 16px;
+										border-radius: 8px;
+									    text-decoration: none;
+									    display: block;
+									}
+									
+									/* 鼠标移上去后修改下拉菜单链接颜色 */
+									.dropdown-content a:hover {
+										color: white;
+										background-color: #a8322c;
+										transition: 0.4s;}
+									
+									/* 在鼠标移上去后显示下拉菜单 */
+									.dropdown:hover .dropdown-content {
+										
+									    display: block;
+									}
+									
+									/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+									.dropdown:hover .dropbtn {
+										color: white;
+									    background-color: #a73330;
+										transition:0.4s;
+									}
+								   .nr{
+									   width: 100%;
+									   height: 500px;
+								   }
+									
+									.lb{
+										/* clear: both; */
+										width:50%;
+										height: 520px;
+										float: right;
+										padding-top: 10px;
+										/* padding-left: ; */
+										/* margin: auto; */
+									}
+									 .lb a{
+										text-decoration: none;
+										color: gray;
+									}
+									.lb ul a:hover{
+										color:#c13432;
+										padding-left: 18px;
+										transition: 0.5s;
+									}
+									 .lb li{
+										padding: 10px 0;
+										/* list-style-type: none ; */
+										color: #cc9966;
+										padding-left: 10px	;
+									}
+									.lb p{
+										color: #cc9966;
+										float: right;
+										padding-right: 60px;
+									}
+									
+									.bk{
+										width: 50%;
+										/* float: left; */
+									}
+									
+									.ck{
+										float: left;
+										width: 90%;
+										height: 80%;
+									    overflow: hidden;
+										padding-right: 0px;
+										margin-right: 0px;
+										margin-left: 20px;
+										margin-top: 30px;
+									}
+									.ck2{
+										width: 40%;
+										height: 5%;
+									    overflow: hidden;
+										float: left;
+										margin-left: 20px;
+										margin-top: 10px;
+									}
+									.xwt {
+									    position: relative;
+									    width: 200vw;
+										height: 100%;
+									    overflow: hidden;
+										margin: 0;
+									    animation: ckdh linear 18s infinite 2s alternate;
+									}
+									.xwt img {
+									    display: inline-block;
+									    width: 40vw;
+									    height: 400px;
+										margin: 0px;
+									}
+									.lj{
+									    position: relative;
+										height: 150vm;
+									    overflow: hidden;
+									    animation: ljdh linear 18s infinite 2s alternate;
+									}
+									.lj li {
+									    display: inline-block;
+									    width: 50vw;
+									    height: 50vw;
+									}
+									.lj a{
+										text-decoration: none;
+										/* text-align: center; */
+										color: gray;
+									}
+									.lj a:hover{
+										color: #c13432;
+										padding-left: 18px;
+										transition: 0.5s;
+									}
+									@keyframes ckdh {
+									   0% {
+									       left: 0;
+									   }
+									   10%{
+									   	left: -0vw;
+									   }
+									   20% {
+									       left: -0vw;
+									   }
+									   
+									  21%{
+									   	left: -40vw;
+									   }30%{
+									   	left: -40vw;
+									   }
+									   40% {
+									       left: -40vw;
+									   }
+									   41%{
+									   	left: -80vw;
+									   }50%{
+									   	left: -80vw;
+									   }
+									   60% {
+									       left: -80vw;
+									   }
+									   61%{
+									   	left: -120vw;
+									   } 70%{
+									   	left: -120vw;
+									   }
+									   80% {
+									       left: -120vw;
+									   }
+									   81%{
+									   	left: -160vw;
+									   } 90%{
+									   	left: -160vw;
+									   }
+									   100% {
+									       left: -160vw;
+									   }
+										
+										
+									}
+									@keyframes ljdh {
+									   /* 0% {
+									        top: 0;
+									    } */
+										10%{
+											top: -0vw;
+										}
+									   20% {
+									        top: -0vw;
+									    }  21% {
+									        top: -50vw;
+									    }
+										30%{
+											top: -50vw;
+										}
+									    40% {
+									        top: -50vw;
+									    }
+										50%{
+											top: -100vw;
+										}41%{
+											top: -100vw;
+										}
+									    60% {
+									        top: -100vw;
+									    }
+										61%{
+											top: -150vw;
+										}	70%{
+											top: -150vw;
+										}
+									    80% {
+									        top: -150vw;
+									    }
+										81%{
+											top: -200vw;
+										}90%{
+											top: -200vw;
+										}
+									    100% {
+									        top: -200vw;
+									    }
+										
+										
+									}
+									
+									#event{
+										/* position: absolute; */
+										float: left;
+										width: 100%;
+										height: 620px;
+										margin-top: 50px;
+										padding-top: 60px;
+										border: none;
+										/* background-color: lightblue; */
+										background: url(img/jiangzuo_bg.jpg) no-repeat center top  ;
+									}
+									.zhuti{
+										/* position: absolute; */
+										/* float: left; */
+										max-width:80% ;
+										height: 500px;
+										/* background-color: rgba(173, 216, 230,0.3); */
+										margin: auto;
+										/* padding-top: ; */
+									}
+									.jz{
+										float: left;
+										/* position: relative; */
+										width:35%;
+										height: 500px;
+										/* overflow: hidden; */
+										/* background-color: rgba(255, 0, 0,0.4); */
+									}
+									.jzbt{
+										/* margin: 20px 0; */
+										height: 50px;
+										/* padding:auto 0; */
+										/* padding: 20px 0; */
+										/* line-height: 30px; */
+									}
+									.jzbt span{
+										float: left;
+									}
+									.jzbt p{
+										float: right;
+									}
+									.jztp{
+										position: relative;
+										width: 100%;
+										height: 270px;
+										padding: 0px;
+										/* background: url(img/jiangzuo.jpg) no-repeat center; */
+									}
+									.jzskj{
+										width: 100%;
+										height: 450px;
+										overflow: hidden;
+									}
+									.jzs{
+										position: relative;
+										width: 100%;
+										/* height: 450px; */
+										/* overflow: hidden; */
+										animation: jzdh  8s infinite 2s alternate;
+									}
+									@keyframes jzdh {
+									   0% {
+									        top: 0;
+									    }
+										
+									   33% {
+									        top: 0;
+									    }
+										33.01%{
+											top: -450px;
+										}
+										
+										66%{
+											top: -450px;
+										}
+										66.01%{
+											top: -900px;
+										}
+										
+									  /* 99% {
+									        top: -900px;
+									    } */
+										100%{
+											top:-900px
+										}
+										
+									}
+									.twz{
+										/* position: relative; */
+										position: absolute;
+										top: 120px;
+										max-width: 80%;
+										max-height: 100px;
+										padding: 20px;
+										background-color: rgba(133, 88, 155,0.8)
+									}
+									.jztp a{
+										/* line-height: 25px; */
+										text-decoration: none;
+										font-size: 20px;
+										color: white;
+									}
+									.jztp  a:hover{
+										color: #CC9966;
+									}
+									.jztp img{
+										width: 100%;
+										height: 270px;
+									}
+									.jzxq{
+										height: 180px;
+										width: 100%;
+										background-color:rgba(184, 191, 201,0.8)
+									}
+									.jzxq p{
+										/* list-style: none; */
+										padding: 8px;
+										font-size: 13px;
+										color: black;
+										/* line-height: 30px; */
+									}
+									.jzxq a{
+										float: right;
+										margin-top:18px ;
+										 padding: 5px 7px;
+										 background-color: rgb(133, 88, 155);
+										text-decoration: none;
+										color: white;
+									}
+									.jzxq a:hover{
+										color: #CC9966;
+									}
+									.xs{
+										/* position: relative; */
+										/* float: right; */
+										width:60%;
+										height: 500px;
+										float: right;
+										/* background-color: lightcoral; */
+										/* float: right; */
+									}
+									.xsbt{
+										height: 50px;
+									}
+									.xsbt span{
+										float: left;
+									}
+									.xsbt p{
+										float: right;
+									}
+									.xsnr{
+										width: 100%;
+										height:450px;
+										background-color: rgba(110, 137, 162,0.3);
+										border: solid white 1px;
+									}
+									.xsnr a{
+										text-decoration: none;
+										color: white;
+									}
+									.xsz{
+										float: left;
+										margin: 25px 0px 0px 20px ;
+										width: 45%;
+										height: 320px;
+										color: white;
+										overflow: hidden;
+										/* padding-bottom: 20px; */
+										/* background-color: yellow; */
+										
+										/* background-color: red; */
+									}
+									/* .xsz a{
+										float: left;
+										top: 0px;
+										
+									} */
+									.xsz:hover{
+										background-color: rgb(50, 108, 159);
+											transition: all 0.5s;
+						
+									}.xsy:hover{
+										background-color: rgb(50, 108, 159);
+										transition: all 0.5s;
+						
+									}
+									.xsz img{
+										transition: all 0.5s;
+									}
+									.xsz img:hover{
+										transform: scale(1.1);
+									}.xsy img{
+										transition: all 0.5s;
+									}
+									.xsy img:hover{
+										transform: scale(1.1);
+									}
+									.zsj{
+										width: 100%;
+										height:60px;
+										padding-top: 16px;
+										/* margin-top: 16px; */
+										/* background-color: red; */
+									}
+									.rq{
+										width: 60px;
+										height: 60px;
+										float: left;
+										padding-left: 6px;
+										font-size: 13px;
+										color: rgb(50, 108, 159);
+										background-color: rgba(178, 190, 200,1.0);
+									}
+									.rq p{
+										font-size: 30px;
+										padding-left: 7px;
+									}
+									.sj{
+										float: left;
+										width:70%;
+										height: 60px;
+										padding-top: 10px;
+										padding-left:15px ;
+										/* font-size: 10px; */
+									}
+									.zsj p{
+										float: left;
+										margin-right: 10px;
+									}.zsj2 p{
+										float: left;
+										margin-right: 10px;
+									}
+								/* 	.zsj a{
+										float: left;
+									} */
+										.xsy{
+										float: right;
+										margin: 25px 20px 0px 0px;
+										width: 45%;
+										height: 320px;
+										color: white;
+										overflow: hidden;
+										/* background-color: red; */
+									}
+									.zt img{
+										width: 100%;
+										height: 240px;
+									}
+									.xsxz{
+										width: 45%;
+										height: 60px;
+										float: left;
+										margin-left: 20px;
+										margin-top: 20px;				
+										color: white;
+									}
+									.xsxy{
+										width: 45%;
+										height: 60px;
+										float: right;
+										margin-right: 20px;
+										margin-top: 20px;
+										color: white;
+										/* background-color: red; */
+									}
+										
+									.xsxz:hover{
+										
+										background-color: rgb(50, 108, 159);
+										transition: all 0.5s;
+						
+									} 	
+									.xsxy:hover{
+										
+										background-color: rgb(50, 108, 159);
+										transition: all 0.5s;
+						
+									} .zsj2:hover .rq {
+										color: white;
+										background-color: rgb(50, 108, 159);
+										/* transition: all 0.5s; */
+									} 
+								/* 	.xsz :hover {
+										background-color: red;
+									} */
+								/* 	.xs img {
+										width: 100%;
+										height: 100%;
+									} */
+									
+									#links{
+										/* clear: float; */
+										width: 100%;
+										height: 150px;
+										/* background-color: #ADD8E6; */
+										float: left;
+										margin: auto;
+									}
+										
+									.ljtp{
+										width: 90%;
+										height: 70px;
+										/* background-color: lightcoral; */
+										margin: auto;
+									}
+									.more{
+										float: right;line-height: 70px;
+									}
+									.ljnr{
+										width: 90%;
+										height: 40px;
+										/* float: left; */
+										/* background-color: white; */
+										/* margin: auto; */
+										margin-left: 7%;
+										margin-top: 30px;
+										font-size: 14px;
+									}
+									.ljnr li{
+										float: left;
+										/* width: 13%; */
+										margin-right: 30px;
+										padding:0px 20px 40px 6px;
+										color: #CC9966;
+									}
+									.ljnr a{
+										text-decoration: none;
+										color: black;
+									}
+									.ljnr a:hover{
+										color: red;
+										/* padding-top: 40px; */
+										padding-left: 10px;
+										/* padding-left: -10px; */
+										margin-right: -10px;
+										transition: all 0.5s;
+										/* position: absolute; */
+										/* left: 10px; */
+										/* left: -15px; */
+									}
+									#fuwu{
+										width: 100%;
+										height: 230px;
+										float: left;
+										background: url(img/hn-foot-bg.jpg) no-repeat center top  ;
+									}
+									.fwnr{
+										/* position: absolute; */
+										width: 90%;
+										height: 180px;
+										/* float: left; */
+										margin: auto;
+										padding-top: 40px;
+										/* background-color: palegreen; */
+									}
+									.cy{
+										width:70%;
+										height: 180px;
+										float: left;
+										/* background-color: lightblue; */
+									}
+									.xmt{
+										/* position: absolute; */
+										float: right;
+										width: 25%;
+										height: 180px;
+										/* background-color: pink; */
+									}
+									.fwbt{
+										width: 100%;
+										height: 30px;
+										/* background-color: red; */
+									}
+									.fwnr li{
+										list-style: none;
+										float: left;margin:25px;
+									}
+									.nrxq{
+										width: 100%;
+										/* top: 50px; */
+									}
+									.nrxq2{
+										position: relative;
+										padding-top: 10px;
+									}
+									.nrxq a{
+										text-decoration: none;
+										color: white;
+										font-size: 12px;
+										/* text-align: center; */
+									}.nrxq2 a{
+										text-decoration: none;
+										color: white;
+										font-size: 12px;
+										/* padding-top: 40px; */
+										/* text-align: center; */
+									}
+									.gw{
+										/* z-index: 3; */
+										position: absolute;
+										top: -65px;
+										left: -9px;
+										display: none;
+									}
+									.guan:hover .gw {
+										display: block;
+										}
+									
+									.wx{
+										position: absolute;
+										left: 90px;
+										top: -70px;
+										display: none;
+									}
+									.wei:hover .wx{
+										display: block;
+									}
+									
+									/* .ewm{
+										width: 100%;
+										
+										padding-bottom: 50px;
+									}
+									.gw{
+										float: left;
+								
+									} */
+									
+									#foot{
+										width: 100%;
+										height:120px;
+										background-color: #313131;
+										float: left;
+										margin: auto;
+									}
+									.footnr{
+										padding: 30px 0px 30px 30px;
+										width: 90%;
+										height:60px;
+										background-color: #313131;
+										margin: auto;
+									}
+									.zuof{
+										width: 30%;
+										float: left;
+									}
+									.youf{
+										line-height: 20px;
+										color: gray;
+										width: 70%;
+										float: right;
+										font-size: 10px;
+									}
+									.youf a{
+										text-decoration: none;
+										color: gray;
+									}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div id="zz">
+			<div class="zuozhe">
+		<div class="zxwz">
+			<a href="">作 者</a>
+			<div class="zxnr">
+				<a href="">学号: &nbsp;&nbsp;172244133&nbsp;</a><br><a href="">姓名: &nbsp;&nbsp;&nbsp;&nbsp;宋金涛</a>
+			</div>
+		</div>
+			
+	
+
+		</div>
+		</div>
+		
+		
+
+		<div class="top">
+			<div class="left">
+				<a href=""><img src="img/logo.png"  ></a>
+			</div>
+			<div class="right">
+				<ul>
+					<li><a href="http://www-en.hnu.edu.cn/">English</a></li>
+					<span class="search"><li class="sou"><input type="search" name="" id="" value="请输入关键字搜索" /><a href="https://www.hnu.edu.cn/sousuo.jsp?wbtreeid=1001"><img src="img/header-search-img.png" ></a></li>
+					<!-- <li class="sou"></li></span>	 -->
+					<li ><a href="">管理与服务机构  ∨  </a></li>
+					<li ><a href="">教育与研究机构  ∨  </a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+		<nav>
+		    <div class="wrap">
+			<div class="zuo">
+		        <ul class="level">
+		            
+		            <li>
+		                <a href="https://www.hnu.edu.cn/hdgk.htm">湖大概况</a>
+		                <ul class="two">
+		                    <li>学校简介</li>
+		                    <li>历史沿革</li>
+		                    <li>历任领导</li>
+		                    <li>现任领导</li>
+		                    <li>管理机构</li>
+		                    <li>校园文化</li>
+		                    <li>美丽校园</li>
+		                </ul>
+		            </li>
+		            <li>
+		                <a href="https://www.hnu.edu.cn/xyxk.htm">学院学科</a>
+						<ul class="two">
+						    <li>学院设置</li>
+						    <li>学科专业</li>
+						    <li>重点建设</li>
+						  
+						</ul>
+		            </li>
+		            <li>
+		                <a href="https://www.hnu.edu.cn/jyjx.htm">教育教学</a>
+						<ul class="two">
+						    <li>师资队伍</li>
+						    <li>本科生教育教学</li>
+						    <li>研究生教育教学</li>
+						    <li>远程与继续教育</li>
+						  
+						</ul>
+		            </li> 
+					<li>
+		                <a href="https://www.hnu.edu.cn/kxyj.htm">科学研究</a>
+		                <ul class="two">
+		                    <li>自然科学</li>
+		                    <li>人文社会科学</li>
+		                    <li>产学研</li>
+		                </ul>
+		            </li> <li>
+		                <a href="https://www.hnu.edu.cn/zsjy.htm">招生就业</a>
+		                <ul class="two">
+		                    <li>本科生招生</li>
+		                    <li>研究生招生</li>
+		                    <li>国际教育招生</li>
+		                    <li>远程与继续教育招生</li>
+		                    <li>就业服务</li>
+		                </ul>
+		            </li> <li>
+		                <a href="https://www.hnu.edu.cn/xysh.htm">校园生活</a>
+		                <ul class="two">
+		                    <li>学生组织</li>
+		                    <li>学术活动</li>
+		                    <li>食宿设施</li>
+		                    <li>园区服务</li>
+		                    <li>信息资源</li>
+		                    <li>校园地图</li>
+		                    <li>交通指南</li>
+		                </ul>
+		            </li>
+		            <li>
+		                <a href="https://www.hnu.edu.cn/glfw.htm">管理服务</a>
+		                <ul class="two">
+		                   <li>教职工管理与服务</li>
+		                   <li>学生管理与服务</li>
+		                   <li>校友与教育基金会</li>
+		                   <li>国际交流合作</li>
+		                   <li>学术管理</li>
+		                   <li>党政管理</li>
+		                   <li>支撑保障</li>
+		                </ul>
+		            </li>
+					<li>
+					    <a href="http://jobs.hnu.edu.cn/">人才招聘</a>
+					</li>
+		        </ul>
+		    </div>
+			<div class="you">
+				<ul>
+					<li><a href="http://xxgk.hnu.edu.cn/">信息公开</a></li>
+					<li><a href="https://pt.hnu.edu.cn/zfca/login?service=http%3A%2F%2Fpt.hnu.edu.cn%2Fportal.do">个人门户</a></li>
+					<li><a href="http://oa.hnu.cn:808/">校内办公</a></li>
+					<li><a href="http://hdsw.hnu.edu.cn/zftal-web/web/index_indexNC.html">办事大厅</a></li>
+					<li><a href="http://yxxt.hnu.edu.cn/">邮箱系统</a></li>
+				</ul>
+			</div>
+			</div>
+			
+		</nav>
+		
+			<div class="swiper-wrap">
+			    <ul class="swiper-img">
+			       <!-- 这里的 --><!----><!-- 是为了消除每个li换行所带来的间距问题 -->
+							<li><img src="img/l1.jpg" /></li><!--
+			        --><li><img src="img/l2.jpg" alt="" /></li><!--
+			        --><li><img src="img/l3.jpg" alt="" /></li><!--
+			        --><li><img src="img/l4.jpg" alt="" /></li><!--
+			        --><li><img src="img/l5.jpg" alt="" /></li><!--
+			        --><li><img src="img/l6.jpg" alt="" /></li>
+			    </ul>
+</div>
+	<div id="news">
+		<div class="bt">
+			<div class="tu">
+				<img src="img/xinwen-bt.png" >
+			</div>
+			<div class="wenzi">
+				<ul>
+					<li style="border-right: solid black 1.2px;"><a href="https://www.hnu.edu.cn/tzgg.htm">通知公告  ></a></li>
+					<li><a href="http://news.hnu.edu.cn/">进入新闻网  ></a></li>
+					<div class="dropdown">
+					  <button class="dropbtn">分类新闻  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp;            ∨  </button>
+					  <div class="dropdown-content">
+					    <a href="http://news.hnu.edu.cn/list_cover.jsp?urltype=tree.TreeTempUrl&wbtreeid=1102">综合要闻</a>
+					    <a href="http://news.hnu.edu.cn/list_cover.jsp?urltype=tree.TreeTempUrl&wbtreeid=1103">媒体湖大</a>
+					    <a href="http://news.hnu.edu.cn/list_cover.jsp?urltype=tree.TreeTempUrl&wbtreeid=1104">学府经纬</a>
+					    <a href="http://news.hnu.edu.cn/sthd.htmhttp://news.hnu.edu.cn/">视听湖大</a>
+					  </div>
+					</div>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="nr">
+			
+			
+			<div class="bk">
+				
+				<div class="ck">
+				    <div class="xwt">
+				        <img src="img/n1.png" alt=""><!--
+						--><img src="img/n2.jpg" alt=""><!--
+				       --><img src="img/n3.jpg" alt=""><!--
+				      --><img src="img/n4.jpg" alt=""><!--
+				        --><img src="img/n5.jpg" alt="">
+				    </div>
+				</div>
+				</div>
+				
+				
+			
+			<div class="lb">
+				<ul>
+					
+				<li><a href="http://news.hnu.edu.cn/">王耀南教授当选中国工程院院士                                    <p>11/22</p>   </a></li>
+				<li><a href="http://news.hnu.edu.cn/">主题教育中央第十一巡回督导组来校调研 <p>11/29</p></a></li>
+				<li><a href="http://news.hnu.edu.cn/">东华软件青年学者丨刘杰：做“算的动”的新型类脑智能芯片 <p>11/29</p></a></li>
+				<li><a href="http://news.hnu.edu.cn/">东华软件青年学者丨谭勇文：与微纳结构金属材料碰撞的“奇遇人生” <p>11/29</p></a></li>
+				<li><a href="http://news.hnu.edu.cn/">东华软件青年学者丨王双印：交叉思维中的领跑者 <p>11/26</p></a></li>
+				<li><a href="http://news.hnu.edu.cn/">我校获“宝钢优秀教师特等奖”、“宝钢优秀学生特等奖” <p>11/26</p></a></li>
+				<li><a href="http://news.hnu.edu.cn/">短视频国家队集结号，湖大“央视频”来了！ <p>11/26</p></a></li>
+				<li><a href="http://news.hnu.edu.cn/">252家单位与4000余名毕业生“对对碰”2020届毕业生供需洽谈会... <p>11/26</p></a></li>
+				<li><a href="http://news.hnu.edu.cn/">我校获中国大学生电动方程式大赛总冠军 <p>11/25</p></a></li>
+				<li><a href="http://news.hnu.edu.cn/">东华软件青年学者丨冯凯：为机械装备“智造”“关节” <p>11/25</p></a></li>
+				<li><a href="http://news.hnu.edu.cn/">湖大人物丨张晓雪：特种兵归来，仍是湖大少年！ <p>11/25</p></a></li>
+			
+				</ul>
+			</div>
+			<div class="ck2">
+			<div class="lj">
+				<ul>
+					<li><a href="http://news.hnu.edu.cn/">全球最快！我校天河超算存储系统获IO-500总榜单带宽第一名  <img src="img/链接.png" ></a></li>
+					<li><a href="http://news.hnu.edu.cn/">大学生键盘乐团“首秀”  <img src="img/链接.png" ></a></li>
+					<li><a href="http://news.hnu.edu.cn/">建筑学科90周年学术报告 四院士同台开讲  <img src="img/链接.png" ></a></li>
+					<li><a href="http://news.hnu.edu.cn/">我校获中国大学生电动方程式大赛总冠军  <img src="img/链接.png" ></a></li>
+					<li><a href="http://news.hnu.edu.cn/">第六届红枫大学生记者节闭幕  <img src="img/链接.png" ></a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	
+	<div id="event">
+		<div class="zhuti">
+			<div class="jz">
+				<div class="jzbt">
+					<span><img src="img/jiangzuo_bt_2017.png" ></span>
+					<p><img src="img/jz-xs-more.png" ></p>
+				</div><div class="jzskj">
+				<div class="jzs">
+				<div class="jztp"><img src="img/jiangzuo.jpg" ><div class="twz"><a href="https://www.hnu.edu.cn/xysh/xshd.htm">信科院：面向计算思维培养的“大学计算机基础”实训建设</a></div><!-- <img src="img/jiangzuo.jpg" > --></div>
+				<div class="jzxq">
+					<p>	<img src="img/jz-icon2.png" > &nbsp;&nbsp;&nbsp;&nbsp;2019年12月7日下午14：30-17：30</p>
+					<p><img src="img/jz-icon3.png" > &nbsp;&nbsp;&nbsp;&nbsp;信科院624会议室（原542）</p>
+					<p><img src="img/jz-icon4.png" >&nbsp;&nbsp;&nbsp;&nbsp; 李暾 国防科技大学教授</p>
+					<p><a href="https://www.hnu.edu.cn/xysh/xshd.htm">查看更多+</a></p>
+				</ul></div>
+				<div class="jztp"><img src="img/jiangzuobeijing.jpg" ><div class="twz"><a href="https://www.hnu.edu.cn/xysh/xshd.htm">信科院：以计算思维为导向的“大学计算机基础”课程实施方案</a></div><!-- <img src="img/jiangzuo.jpg" > --></div>
+				<div class="jzxq">
+					<p>	<img src="img/jz-icon2.png" > &nbsp;&nbsp;&nbsp;&nbsp;2019年12月7日上午9：00-12：00</p>
+					<p><img src="img/jz-icon3.png" > &nbsp;&nbsp;&nbsp;&nbsp;信科院624会议室（原542）</p>
+					<p><img src="img/jz-icon4.png" > &nbsp;&nbsp;&nbsp;&nbsp;周海芳 国防科技大学教授</p>
+					<p><a href="https://www.hnu.edu.cn/xysh/xshd.htm">查看更多+</a></p>
+				</ul></div>
+				<div class="jztp"><img src="img/xiuqiuhua.jpg" ><div class="twz"><a href="https://www.hnu.edu.cn/xysh/xshd.htm">化工院：Pyroptosis: from innate immunity to cancer</a></div><!-- <img src="img/jiangzuo.jpg" > --></div>
+				<div class="jzxq">
+					<p>	<img src="img/jz-icon2.png" >&nbsp;&nbsp;&nbsp;&nbsp; 2019年12月6日上午11：00~</p>
+					<p><img src="img/jz-icon3.png" >&nbsp;&nbsp;&nbsp;&nbsp; 新化工楼D区报告厅</p>
+					<p><img src="img/jz-icon4.png" > &nbsp;&nbsp;&nbsp;&nbsp;邵峰 院士</p>
+					<p><a href="https://www.hnu.edu.cn/xysh/xshd.htm">查看更多+</a></p>
+				</ul></div></div>
+				</div>
+			</div>
+			<div class="xs">
+				<div class="xsbt">
+					<span><img src="img/xueshu-bt.png" ></span>
+					<p><img src="img/jz-xs-more.png" ></p>
+				</div>
+				<div class="xsnr">
+					<div class="xsz">
+						<div class="zt">
+							<img src="img/1C7F6178D291DA167AC1D6C4F91_EDB5B5E9_1D2D4.jpg" >
+						</div>
+						
+						<div class="zsj">
+								<a href="https://www.hnu.edu.cn/xsdt.htm"><div class="rq"><p>20</p> <br>2019-11</div><div class="sj">中德纳米光子与光电集成双边研讨会召开</div></a>
+						</div>
+						
+					</div>
+					<div class="xsy">
+						<div class="zt">
+							<img src="img/967D3F30E4F6D63186DCFC34D18_8251689C_1792A.jpg" >
+						</div>
+						<div class="zsj">
+							<a href="https://www.hnu.edu.cn/xsdt.htm">
+						<div class="rq"><p>19</p> <br>2019-11</div><div class="sj">建筑学科90周年学术报告 四院士同台开讲</div>
+						</a>
+						</div>
+					</div>
+					<div class="xsxz">
+						<div class="zsj2">
+							<a href="https://www.hnu.edu.cn/xsdt.htm">
+								<div class="rq"><p>19</p> <br>2019-11</div><div class="sj">化学与生物医学交叉前沿论坛举行</div>
+						</a>
+						</div>
+						
+					</div><div class="xsxy">
+						<div class="zsj2">
+							<a href="https://www.hnu.edu.cn/xsdt.htm">
+								<div class="rq"><p>15</p> <br>2019-11</div><div class="sj">多国专家齐聚长沙纵论交通安全 第十六届国际汽车交通安全...
+</div></a>
+						</div>
+						
+					</div>
+				</div>
+				<!-- <img src="img/l1.jpg" > -->
+			</div>
+		</div>
+	</div>
+	 
+	 
+	 <div id="links">
+	 	<div class="ljtp"><div class="tu"><img src="img/cylj-bt.png" ></div><div class="more"><img src="img/zxzt-more.png" ></div></div>
+		<div class="ljnr">
+			<ul>
+				<li><a href="http://www.moe.gov.cn/">中华人民共和国教育部&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="http://www.univs.cn/zx/">中国大学生在线</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="http://www.chinadegrees.cn/">中国学位与研究生教育信息网</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="http://jyt.hunan.gov.cn/">湖南教育网</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="http://zwfw-new.hunan.gov.cn/hnzwfw/1/index.htm">湖南政务服务网</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="http://lib.hnu.cn/">湖南大学图书馆</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="https://advice2035.most.gov.cn/">众筹科技2035</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			</ul>
+		</div>
+	 </div>
+	 <div id="fuwu">
+		 	
+	 	<div class="fwnr">
+			<div class="cy">
+				<div class="fwbt"><img src="img/cyfw-bt.png" ></div>
+				<div class="nrxq">
+					<ul>
+						<li><a href="https://www.hnu.edu.cn/wzdt.htm"><img src="img/fuwu-img1.png" ><br>网站导航</a></li>
+						<li><a href="https://www.hnu.edu.cn/xysh/xydt/xxdt.htm"><img src="img/fuwu-img2.png" ><br>校园地图</a></li>
+						<li><a href="https://www.hnu.edu.cn/info/1065/1435.htm"><img src="img/fuwu-img3.png" ><br>校内交通</a></li>
+						<li><a href="https://www.hnu.edu.cn/info/1240/3854.htm"><img src="img/fuwu-img4.png" ><br>班车时刻表</a></li>
+						<li><a href="https://www.hnu.edu.cn/hdgk/gljg/bgddjlxfs.htm"><img src="img/fuwu-img5.png" ><br>常用电话</a></li>
+						<li><a href="http://hnuef.hnu.edu.cn/"><img src="img/fuwu-img6.png" ><br>捐 赠</a></li>
+						<li><a href="http://its.hnu.edu.cn/"><img src="img/fuwu-img7.png" ><br>校园一卡通</a></li>
+						<li><a href="http://sjxzxx.hnu.edu.cn/?tdsourcetag=s_pctim_aiomsg"><img src="img/fuwu-img8.png" ><br>书记校长信箱</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="xmt">
+				
+				<div class="fwbt"><img src="img/xmt-bt.png" ></div>
+			
+					
+					<div class="nrxq2">
+					<ul>
+						<li class="guan"><div class="gw"><img src="img/gw.png" ></div><a href=""><img src="img/guanwang.png" ><br>湖大官网</a></li>
+						<li class="wei"><div class="wx"><img src="img/weixin.jpg" ></div><a href=""><img src="img/foot-hd-wx.png" ><br>湖大微信</a></li>
+						<li><a href="https://weibo.com/hunanuniversity"><img src="img/foot-hd-wb.png" ><br>湖大微博</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	 </div>
+	 
+	 
+	 <div id="foot">
+		 <div class="footnr">
+	 	<div class="zuof"><img src="img/foot.png" ></div>
+		<div class="youf">湖南大学版权所有©1996,2000,2010,2017年 &nbsp;&nbsp;    通讯地址:湖南省长沙市岳麓区麓山南路麓山门  &nbsp;&nbsp;  邮编：410082 &nbsp;&nbsp;   Email：xiaoban@hnu.edu.cn <br>
+域名备案信息：[www.hnu.edu.cn,www.hnu.cn/湘ICP备09007699号] &nbsp;&nbsp;   [hnu.cn 湘教QS3-200503-000481 hnu.edu.cn 湘教QS4-201312-010059] <br>
+<a href="https://new.cnzz.com/v1/login.php?siteid=2429570">站长统计</a>
+</div></div>
+	 </div>
+	 
+	</body>
+</html>
